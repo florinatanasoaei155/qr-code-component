@@ -1,0 +1,11 @@
+@use './reset';
+@use './variables';
+@use './fonts';
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
