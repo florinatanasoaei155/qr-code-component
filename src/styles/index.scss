@@ -1,11 +1,66 @@
-@use './reset';
-@use './variables';
+@use './variables' as *;
 @use './fonts';
 
+html {
+  width: 100%;
+}
+
 body {
+  margin: 0;
+  background-color: $light-gray;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h3, p {
   font-family: 'Outfit', sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 22px;
 }
 
 p {
   font-size: 15px;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  max-width: 300px;
+  padding: 16px;
+  background-color: $white;
+  border-radius: 22px;
+
+  &-header {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &-title {
+    color: $dark-blue;
+  }
+
+  &-subtitle {
+    color: $grayish-blue;
+  }
+
+  &-image-wrapper {
+    display: flex;
+  }
 }
